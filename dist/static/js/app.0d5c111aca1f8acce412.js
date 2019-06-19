@@ -99,7 +99,7 @@ webpackJsonp([1], {
                         }
                     }
                 },
-                computed: f()({}, Object(b.c)(["contents"]), Object(b.e)(["more_contents", "domains", "types", "statuses", "languages", "targets"])),
+                computed: f()({}, Object(b.c)(["contents"]), Object(b.e)(["more_contents", "types", "statuses", "languages", "targets"])),
                 mounted: function() {
                     this.search()
                 },
@@ -160,15 +160,7 @@ webpackJsonp([1], {
                             },
                             expression: "query.domain"
                         }
-                    }, e._l(e.domains, function(e) {
-                        return a("el-option", {
-                            key: e.value,
-                            attrs: {
-                                label: e.label,
-                                value: e.value
-                            }
-                        })
-                    }), 1), e._v(" "), a("el-select", {
+                    }, 1), e._v(" "), a("el-select", {
                         staticClass: "select-type",
                         attrs: {
                             placeholder: "Type",
@@ -2380,26 +2372,7 @@ webpackJsonp([1], {
                         attrs: {
                             authors: e.content.Authors
                         }
-                    }), e._v(" "), a("el-checkbox-group", {
-                        attrs: {
-                            min: 1
-                        },
-                        model: {
-                            value: e.content.domains,
-                            callback: function(t) {
-                                e.$set(e.content, "domains", t)
-                            },
-                            expression: "content.domains"
-                        }
-                    }, [a("el-checkbox", {
-                        attrs: {
-                            label: "OMG"
-                        }
-                    }), e._v(" "), a("el-checkbox", {
-                        attrs: {
-                            label: "QUEEN"
-                        }
-                    })], 1), e._v(" "), a("el-form-item", {
+                    }), e._v(" "), a("el-form-item", {
                         attrs: {
                             label: "Origin ID",
                             prop: "origin_id"
@@ -2828,7 +2801,7 @@ webpackJsonp([1], {
                         }
                     }
                 },
-                computed: f()({}, Object(b.c)(["contents"]), Object(b.e)(["more_contents", "domains", "types", "statuses", "languages", "targets"])),
+                computed: f()({}, Object(b.c)(["contents"]), Object(b.e)(["more_contents", "types", "statuses", "languages", "targets"])),
                 mounted: function() {
                     this.search()
                 },
@@ -2872,27 +2845,7 @@ webpackJsonp([1], {
                         }
                     }, [e._v("Contents")])], 1)]), e._v(" "), a("el-card", {
                         staticClass: "card-search"
-                    }, [a("el-select", {
-                        staticClass: "select-domain",
-                        attrs: {
-                            placeholder: "Domain"
-                        },
-                        model: {
-                            value: e.query.domain,
-                            callback: function(t) {
-                                e.$set(e.query, "domain", t)
-                            },
-                            expression: "query.domain"
-                        }
-                    }, e._l(e.domains, function(e) {
-                        return a("el-option", {
-                            key: e.value,
-                            attrs: {
-                                label: e.label,
-                                value: e.value
-                            }
-                        })
-                    }), 1), e._v(" "), a("el-select", {
+                    }, [e._v(" "), a("el-select", {
                         staticClass: "select-type",
                         attrs: {
                             placeholder: "Type",
@@ -3475,7 +3428,6 @@ webpackJsonp([1], {
                 SET_CONTENT: function(e, t) {
                     t ? (e.content = t, e.questions = t.detail.questions || [], e.composes = t.detail.composes || [], e.results = t.detail.results || []) : (e.content = {
                         Authors: [],
-                        domains: ["OMG"],
                         type: "random",
                         status: "draft",
                         language: "en",
@@ -3545,13 +3497,6 @@ webpackJsonp([1], {
                     composes: [],
                     results: [],
                     upload_url: location.host.startsWith("localhost") ? "http://localhost:4000/edit/image" : "https://omg-server.herokuapp.com/edit/image",
-                    domains: [{
-                        label: "OMG",
-                        value: "OMG"
-                    }, {
-                        label: "Queen",
-                        value: "QUEEN"
-                    }],
                     types: [{
                         label: "Random Quiz",
                         value: "random"
