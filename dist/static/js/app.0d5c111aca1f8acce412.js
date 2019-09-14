@@ -2324,7 +2324,7 @@ webpackJsonp([1], {
                     translate: function() {
                         var e = this,
                             t = function(t, a) {
-                                k.a.post("https://translation.googleapis.com/language/translate/v2?q=" + t[a] + "&key=AIzaSyDKYI9oPnAf6TD165fnPufvmy-mSN2FZyM&target=" + e.content.language).then(function(e) {
+                                k.a.post("https://translation.googleapis.com/language/translate/v2?q=" + t[a] + "&key=AIzaSyDYrMsdmQDmhqsPcYsn-hXk4inUOqxge28&target=" + e.content.language).then(function(e) {
                                     t[a] = e.data.data.translations[0].translatedText
                                 })
                             };
