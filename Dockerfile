@@ -1,4 +1,4 @@
-FROM nginx:1.16.1-alpine
+FROM beevelop/nginx-basic-auth
 
 COPY dist/ /usr/share/nginx/html/
 
