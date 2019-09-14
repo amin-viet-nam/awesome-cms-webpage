@@ -4,7 +4,7 @@ COPY dist/ /usr/share/nginx/html/
 
 COPY default.conf /etc/nginx/conf.d/default.conf
 
-RUN htpasswd -c /etc/nginx/.htpasswd sama -b sama
+RUN htpasswd -bc /etc/nginx/.htpasswd sama sama
 
 EXPOSE 80
 
