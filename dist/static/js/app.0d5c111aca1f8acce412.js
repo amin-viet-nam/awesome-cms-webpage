@@ -46,7 +46,7 @@ webpackJsonp([1], {
             w = a("mtWM"),
             k = a.n(w),
             T = k.a.create({
-                baseURL: location.host.startsWith("localhost") ? "http://localhost:4000/edit" : "https://omg-server.herokuapp.com/edit",
+                baseURL: location.host.startsWith("localhost") ? "http://localhost:4000/edit" : "https://cms-api.anhminhltd.com/edit",
                 headers: {
                     "Cache-Control": "no-cache"
                 }
@@ -3496,7 +3496,7 @@ webpackJsonp([1], {
                     questions: [],
                     composes: [],
                     results: [],
-                    upload_url: location.host.startsWith("localhost") ? "http://localhost:4000/edit/image" : "https://omg-server.herokuapp.com/edit/image",
+                    upload_url: location.host.startsWith("localhost") ? "http://localhost:4000/edit/image" : "https://cms-api.anhminhltd.com/edit/image",
                     types: [{
                         label: "Random Quiz",
                         value: "random"
